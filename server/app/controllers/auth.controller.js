@@ -1,6 +1,7 @@
 const config = require("../config/auth.config");
 const db = require("../models");
 const User = db.user;
+const Role = db.role;
 
 var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
@@ -8,7 +9,7 @@ var bcrypt = require("bcryptjs");
 exports.signup = (req, res) => {
   const user = new User({
     username: req.body.username,
-    email: req.body.email,
+
     password: bcrypt.hashSync(req.body.password, 8),
   });
 
@@ -92,9 +93,15 @@ exports.signin = (req, res) => {
         expiresIn: 86400, // 24 hours
       });
 
+      var authorities = [];
+
+      for (let i = 0; i < user.roles.length; i++) {
+        authorities.push("ROLE_" + user.roles[i].name.toUpperCase());
+      }
       res.status(200).send({
         id: user._id,
         username: user.username,
+        roles: authorities,
         accessToken: token,
       });
     });
