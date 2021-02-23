@@ -1,0 +1,42 @@
+.games {
+  text-align: center;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  &__search {
+    font-size: 1.5rem;
+    margin-top: 3vh;
+  }
+  &__search--input {
+    width: 20%;
+    margin-top: 2vh;
+  }
+
+  &__list {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 3vh;
+    list-style-type: none;
+  }
+  &__game--img {
+    height: 20vh;
+    width: 20vw;
+    border-radius: 10px;
+  }
+  &__game--name {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  &__showall {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+  }
+}

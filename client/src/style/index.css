@@ -1,0 +1,212 @@
+.landingpage {
+  padding: 8vh 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.landingpage__loginsignup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  position: absolute;
+  top: 3vh;
+  right: 3vw;
+}
+
+.landingpage__loginsignup--signin, .landingpage__loginsignup--signup {
+  text-decoration: none;
+  color: white;
+}
+
+.landingpage__loginsignup--signin:hover, .landingpage__loginsignup--signup:hover {
+  text-decoration: none;
+}
+
+.landingpage__welcome {
+  text-align: center;
+  position: absolute;
+  top: 20vh;
+  left: 22vw;
+  font-size: 4rem;
+}
+
+.landingpage__gamelib {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 60vh;
+  left: 36vw;
+}
+
+.landingpage__gamelib:hover {
+  text-decoration: none;
+}
+
+.signup {
+  text-align: center;
+}
+
+.signup__form {
+  position: absolute;
+  top: 23vh;
+  left: 43vw;
+  text-align: center;
+}
+
+.signup__button {
+  margin-top: 5vh;
+}
+
+.signup__password, .signup__confirmpassword, .signup__birthday {
+  margin-top: 3vh;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin__back {
+  text-align: end;
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+}
+
+.signin__form {
+  position: absolute;
+  top: 25vh;
+  left: 43vw;
+  text-align: center;
+}
+
+.signin__button {
+  padding-top: 5vh;
+}
+
+.signin__password {
+  margin-top: 3vh;
+}
+
+.games {
+  text-align: center;
+}
+
+.games__title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.games__search {
+  font-size: 1.5rem;
+  margin-top: 3vh;
+}
+
+.games__search--input {
+  width: 20%;
+  margin-top: 2vh;
+}
+
+.games__list {
+  margin-top: 5vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 3vh;
+  list-style-type: none;
+}
+
+.games__game--img {
+  height: 20vh;
+  width: 20vw;
+  border-radius: 10px;
+}
+
+.games__game--name {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.games__showall {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+}
+
+.gamble {
+  text-align: center;
+}
+
+.gamble__back {
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+}
+
+.gamble__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
+.gamble__img {
+  height: 55vh;
+  margin-top: 8vh;
+}
+
+.gamble__playmoney {
+  margin-top: 2vh;
+  font-size: 1.5rem;
+}
+
+.gamble__bets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 3vh 25vw;
+}
+
+.gamble__bets--bet {
+  width: 6vw;
+  font-size: 1.2rem;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+/*# sourceMappingURL=index.css.map */

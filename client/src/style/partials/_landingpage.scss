@@ -1,0 +1,41 @@
+.landingpage {
+  padding: 8vh 10vw;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  &__loginsignup {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    position: absolute;
+    top: 3vh;
+    right: 3vw;
+  }
+  &__loginsignup--signin,
+  &__loginsignup--signup {
+    text-decoration: none;
+    color: white;
+  }
+  &__loginsignup--signin:hover,
+  &__loginsignup--signup:hover {
+    text-decoration: none;
+  }
+  &__welcome {
+    text-align: center;
+    position: absolute;
+    top: 20vh;
+    left: 22vw;
+    font-size: 4rem;
+  }
+  &__gamelib {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: 60vh;
+    left: 36vw;
+  }
+  &__gamelib:hover {
+    text-decoration: none;
+  }
+}

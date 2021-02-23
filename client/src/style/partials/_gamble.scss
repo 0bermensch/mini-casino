@@ -1,0 +1,36 @@
+.gamble {
+  text-align: center;
+  &__back {
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2vh;
+  }
+  &__img {
+    height: 55vh;
+    margin-top: 8vh;
+  }
+  &__playmoney {
+    margin-top: 2vh;
+    font-size: 1.5rem;
+  }
+
+  &__bets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3vh 25vw;
+  }
+  &__bets--bet {
+    width: 6vw;
+    font-size: 1.2rem;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+  }
+}

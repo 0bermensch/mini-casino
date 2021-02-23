@@ -1,0 +1,18 @@
+.signup {
+  text-align: center;
+  &__form {
+    position: absolute;
+    top: 23vh;
+    left: 43vw;
+    text-align: center;
+  }
+
+  &__button {
+    margin-top: 5vh;
+  }
+  &__password,
+  &__confirmpassword,
+  &__birthday {
+    margin-top: 3vh;
+  }
+}
